@@ -1296,15 +1296,18 @@ td p:not(:last-child) {
   box-shadow: 4px 5px 11px rgb(0 0 0 / 34%);
   cursor: pointer;
 	transition: all .5s;
+	position: relative;
 }
 .playlist__button:hover {
 	box-shadow: 4px 5px 8px rgb(0 0 0 / 54%);
 }
 .playlist__button-img {
-	max-width: 52px;
-	padding-left: 8px;
-	padding-top: 8px;
-}
+    left: 53%;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    max-width: 52px;
+  }
 .playlist__item-title {
 	padding: 15px 10px;
 	font-family: 'Montserrat Alternates';
@@ -2931,7 +2934,7 @@ picture {
 	.playlist__button-img {
 		width: 41px;
 		height: 43px;
-		padding-left: 5px;
+		/* padding-left: 5px; */
 	}
 }
 @media(max-width: 360px) {

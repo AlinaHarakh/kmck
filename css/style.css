@@ -17,7 +17,7 @@ a {
 	padding: 0 10px;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 36px;
@@ -40,7 +40,7 @@ body._lock {
 	font-size: 30px;
 	line-height: 36px;
 	text-align: center;
-	letter-spacing: -2px;
+	/* letter-spacing: -2px; */
 	margin-bottom: 50px;
 }
 .header {
@@ -110,7 +110,7 @@ body._lock {
 	border-top: 5px solid #161616;
 	font-size: 16px;
 	line-height: 20px;
-	letter-spacing: -0.6px;
+	/* letter-spacing: -0.6px; */
 	transition: all .5s;
 	z-index: 20;
 }
@@ -232,7 +232,7 @@ body._touch .menu__list > li._active .submenu {
 	font-size: 24px;
 	line-height: 30px;
 	text-align: center;
-	letter-spacing: -2.5px;
+	/* letter-spacing: -2.5px; */
 	margin-bottom: 30px;
 }
 .reserves__kinds-title span {
@@ -283,7 +283,7 @@ body._touch .menu__list > li._active .submenu {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
-	letter-spacing: -1.3px;
+	/* letter-spacing: -1.3px; */
 }
 
 /*------SAVE--------*/
@@ -328,7 +328,7 @@ body._touch .menu__list > li._active .submenu {
 	font-size: 20px;
 	line-height: 24px;
 	text-align: center;
-	letter-spacing: -1px;
+	/* letter-spacing: -1px; */
 	color: #CE202F;
 	margin-bottom: 15px;
 } 
@@ -380,7 +380,7 @@ body._touch .menu__list > li._active .submenu {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
-	letter-spacing: -2px;
+	/* letter-spacing: -2px; */
 	color: #D70025;
 }
 
@@ -535,12 +535,12 @@ body._touch .menu__list > li._active .submenu {
 	font-size: 20px;
 	line-height: 22px;
 	color: #D70025;
-	letter-spacing: -2px;
+	/* letter-spacing: -2px; */
 }
 .link__item-title--big{
 	font-size: 24px;
 	line-height: 28px;
-	letter-spacing: -2px;
+	/* letter-spacing: -2px; */
 	border-radius: 6px;
 }
 .link__item-link {
@@ -730,7 +730,7 @@ body._touch .viber-pc {
 	font-size: 50px;
 	line-height: 60px;
 	text-align: center;
-	letter-spacing: -3px;	
+	/* letter-spacing: -3px;	 */
 	color: #161616;
 }
 .for-donors__items {
@@ -769,7 +769,7 @@ body._touch .viber-pc {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 28px;
-	letter-spacing: -2px;
+	/* letter-spacing: -2px; */
 	color: #D70025;
 	transition: all .5s;
 }
@@ -800,7 +800,7 @@ body._touch .viber-pc {
 	font-size: 30px;
 	line-height: 36px;
 	text-align: center;
-	letter-spacing: -2px;
+	/* letter-spacing: -2px; */
 	color: #161616;
 	margin-bottom: 30px;
 }
@@ -868,7 +868,7 @@ flex: 100%;
 	font-size: 18px;
 	line-height: 26px;
 	text-align: center;
-	letter-spacing: -1.5px;
+	/* letter-spacing: -1.5px; */
 	color: #6E7176;
 	background-color: #f5f5f5;
 }
@@ -933,7 +933,7 @@ td p:not(:last-child) {
 	font-size: 24px;
 	line-height: 30px;
 	text-align: center;
-	letter-spacing: -1.5px;
+	/* letter-spacing: -1.5px; */
 	margin-bottom: 35px;
 }
 .infections__descr {
@@ -1152,7 +1152,7 @@ td p:not(:last-child) {
 	font-size: 20px;
 	line-height: 24px;
 	text-align: center;
-	letter-spacing: -0.3px;
+	/* letter-spacing: -0.3px; */
 	max-width: 940px;
 	margin: 0px auto;
 }
@@ -1166,7 +1166,7 @@ td p:not(:last-child) {
 	font-size: 24px;
 	line-height: 30px;
 	text-align: center;
-	letter-spacing: -1.5px;
+	/* letter-spacing: -1.5px; */
 	margin-bottom: 30px;
 }
 .article__text:not(:last-child) {
@@ -1338,7 +1338,7 @@ border-radius: 4px;
 	font-size: 30px;
 	line-height: 36px;
 	text-align: center;
-	letter-spacing: -2px;
+	/* letter-spacing: -2px; */
 	color: #D70025;
 	margin-bottom: 30px;
 }
@@ -1352,7 +1352,7 @@ border-radius: 4px;
 	font-size: 24px;
 	line-height: 30px;
 	text-align: center;
-	letter-spacing: -1.5px;
+	/* letter-spacing: -1.5px; */
 	color: #161616;
 	margin-bottom: 15px;
 }

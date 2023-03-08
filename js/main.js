@@ -53,20 +53,30 @@ if (iconMenu) {
 let circularProgress = document.querySelector('.circular-progress'),
 	progressValue = document.querySelector('.progress-value');
 let progressStartValue = 0,
-	progressEndValue = 90,
+	progressEndValue = document.querySelector('.progress-value').getAttribute("value"),
 	speed = 30;
+
+function determine() {
+	if (progressEndValue >= 75) {
+		document.querySelector('.reserves__progress-level').innerHTML = "Достатній";
+	} else if (progressEndValue >= 45 || progressEndValue <= 74) {
+		document.querySelector('.reserves__progress-level').innerHTML = "Середній";
+	}
+
+}
+
+
 let progress = setInterval(() => {
 	progressStartValue++;
 
-	// progressValue.textContent = progressStartValue;
-	// circularProgress.style.background = 'conic-gradient(#D70025 ' + (progressStartValue * 3.6) + 'deg, #ffffff 0deg)';
+	progressValue.textContent = progressStartValue;
+	circularProgress.style.background = 'conic-gradient(#D70025 ' + (progressStartValue * 3.6) + 'deg, #ffffff 0deg)';
 
 	if (progressStartValue == progressEndValue) {
 		clearInterval(progress);
 		console.log(progress);
 	}
 }, speed);
-
 
 
 
@@ -158,13 +168,16 @@ window.addEventListener('DOMContentLoaded', function () {
 	})
 }()
 
+
+// + function name() {
+
+
 $('.documentation-certificate__item').magnificPopup({
 	type: 'image',
 	gallery: {
 		enabled: true
 	},
 	removalDelay: 300,
-	// mainClass: 'mfp-fade'
 });
 
 
@@ -202,7 +215,7 @@ $(document).ready(function () {
 
 	});
 });
-
+	// }
 // $.magnificPopup.open({
 // 	items: {
 // 		src: 'https://www.youtube.com/watch?v=0O2aH4XLbto'

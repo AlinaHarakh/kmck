@@ -40,7 +40,6 @@ body._lock {
 	font-size: 30px;
 	line-height: 36px;
 	text-align: center;
-	/* letter-spacing: -2px; */
 	margin-bottom: 50px;
 }
 .header {
@@ -110,7 +109,6 @@ body._lock {
 	border-top: 5px solid #161616;
 	font-size: 16px;
 	line-height: 20px;
-	/* letter-spacing: -0.6px; */
 	transition: all .5s;
 	z-index: 20;
 }
@@ -202,7 +200,6 @@ body._touch .menu__list > li._active .submenu {
 	align-items: flex-start;
 	justify-content: center;
 	gap: 20px;
-	/* height: 430px; */
 }
 .banner__promo-img {
 	max-width: 100%;
@@ -232,7 +229,6 @@ body._touch .menu__list > li._active .submenu {
 	font-size: 24px;
 	line-height: 30px;
 	text-align: center;
-	/* letter-spacing: -2.5px; */
 	margin-bottom: 30px;
 }
 .reserves__kinds-title span {
@@ -283,7 +279,6 @@ body._touch .menu__list > li._active .submenu {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
-	/* letter-spacing: -1.3px; */
 }
 
 /*------SAVE--------*/
@@ -328,7 +323,6 @@ body._touch .menu__list > li._active .submenu {
 	font-size: 20px;
 	line-height: 24px;
 	text-align: center;
-	/* letter-spacing: -1px; */
 	color: #CE202F;
 	margin-bottom: 15px;
 } 
@@ -380,7 +374,6 @@ body._touch .menu__list > li._active .submenu {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
-	/* letter-spacing: -2px; */
 	color: #D70025;
 }
 
@@ -389,12 +382,15 @@ body._touch .menu__list > li._active .submenu {
 	background-color: #363636;
 	padding: 100px 0;
 	margin-bottom: 100px;
+	background-image: url('../images/video-clip__bg.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .video-clip .video-inner {
 	margin-bottom: 0;
 }
 .video-inner {
-	/* padding-bottom: 100px; */
 	margin-bottom: 100px;
 }
 .video-container {
@@ -409,7 +405,8 @@ body._touch .menu__list > li._active .submenu {
 .video-container + .video-container  {
 	margin-top: 30px;
 }
-.video {
+.video,
+.playlist__video {
 	width: 100%;
 	padding-top: 56.25%;
 	background-color: #171111;
@@ -491,12 +488,11 @@ body._touch .menu__list > li._active .submenu {
 	align-items: flex-end;
 	justify-content: flex-start;
 	width: 100%;
-  /* font-size: 16px;
-  line-height: 24px; */
   padding: 20px;
   top: auto;
   border-radius: 0 0 4px 4px;
 }
+
 /*-------------LINK-ITEM-------*/
 .link__items {
 	display: grid;
@@ -535,12 +531,10 @@ body._touch .menu__list > li._active .submenu {
 	font-size: 20px;
 	line-height: 22px;
 	color: #D70025;
-	/* letter-spacing: -2px; */
 }
 .link__item-title--big{
 	font-size: 24px;
 	line-height: 28px;
-	/* letter-spacing: -2px; */
 	border-radius: 6px;
 }
 .link__item-link {
@@ -632,7 +626,7 @@ body._touch .viber-pc {
 	text-align: center;
 }
 .footer__contacts {
-	max-width: 613px;
+	max-width: 662px;
 	margin: 0px auto;
 	margin-bottom: 20px;
 }
@@ -670,13 +664,9 @@ body._touch .viber-pc {
 	font-family: 'Montserrat Alternates';
 	font-weight: 300;
 }
-/* .footer__contacts-number {
-	position: relative;
-} */
 .footer__contacts-number::before {
 	background-image: url('../images/phone-contacts.svg');
 }
-
 
 /*----FOR DONORS------*/
 .page__top{
@@ -687,6 +677,7 @@ body._touch .viber-pc {
 	padding-bottom: 30px;
 	margin-bottom: 70px;
 }
+
 /*----breadcrumbs------*/
 .breadcrumbs {
   padding: 10px 0px ;
@@ -730,7 +721,6 @@ body._touch .viber-pc {
 	font-size: 50px;
 	line-height: 60px;
 	text-align: center;
-	/* letter-spacing: -3px;	 */
 	color: #161616;
 }
 .for-donors__items {
@@ -741,6 +731,10 @@ body._touch .viber-pc {
 .videos {
 	background-color: #363636;
 	padding: 100px 0;
+	background-image: url('../images/video-clip__bg.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: repeat;
 }
 .videos .video-container:nth-child(1) .play-btn {
 	background-image: url('../images/previews/for-donors_prev1.jpg');
@@ -769,7 +763,6 @@ body._touch .viber-pc {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 28px;
-	/* letter-spacing: -2px; */
 	color: #D70025;
 	transition: all .5s;
 }
@@ -791,6 +784,7 @@ body._touch .viber-pc {
 .note-info__text:not(:last-child) {
 	margin-bottom: 20px;
 }
+
 /*------RULES-------*/
 .rules {
 	margin-bottom: 100px;
@@ -800,7 +794,6 @@ body._touch .viber-pc {
 	font-size: 30px;
 	line-height: 36px;
 	text-align: center;
-	/* letter-spacing: -2px; */
 	color: #161616;
 	margin-bottom: 30px;
 }
@@ -868,7 +861,6 @@ flex: 100%;
 	font-size: 18px;
 	line-height: 26px;
 	text-align: center;
-	/* letter-spacing: -1.5px; */
 	color: #6E7176;
 	background-color: #f5f5f5;
 }
@@ -898,7 +890,6 @@ td:nth-child(1) {
 }
 td:not(:first-child) {
 	padding-left: 20px;
-	
 }
 td:last-child {
 	border: none;
@@ -933,7 +924,6 @@ td p:not(:last-child) {
 	font-size: 24px;
 	line-height: 30px;
 	text-align: center;
-	/* letter-spacing: -1.5px; */
 	margin-bottom: 35px;
 }
 .infections__descr {
@@ -1128,6 +1118,7 @@ td p:not(:last-child) {
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	color: #ffffff;
+	margin-bottom: -2px;
 }
 .food__items {
 	display: flex;
@@ -1152,7 +1143,6 @@ td p:not(:last-child) {
 	font-size: 20px;
 	line-height: 24px;
 	text-align: center;
-	/* letter-spacing: -0.3px; */
 	max-width: 940px;
 	margin: 0px auto;
 }
@@ -1166,7 +1156,6 @@ td p:not(:last-child) {
 	font-size: 24px;
 	line-height: 30px;
 	text-align: center;
-	/* letter-spacing: -1.5px; */
 	margin-bottom: 30px;
 }
 .article__text:not(:last-child) {
@@ -1265,60 +1254,27 @@ td p:not(:last-child) {
 	background-size: contain;
 	background-position: center bottom;
 	background-repeat: no-repeat;
+	margin-bottom: -2px;
+}
+.playlist	.ready .play-btn {
+    display: flex;
 }
 .playlist__inner {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-content: space-around;
 }
-.playlist__item {
-	
+.playlist__inner .video-container + .video-container {
+	margin-top: 0px;
 }
-.playlist__link {
-	border-radius: 4px;
-	display: block;
-	padding-top: 90px;
-	display: flex;
-	gap: 40px;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+.playlist__inner .video-container {
+	height: auto;
 }
-.playlist__button {
-	border: none;
-	border-radius: 100%;
-	background-color: #ffffff;
-	width: 65px;
-  height: 65px;
-  box-shadow: 4px 5px 11px rgb(0 0 0 / 34%);
-  cursor: pointer;
-	transition: all .5s;
-	position: relative;
-}
-.playlist__button:hover {
-	box-shadow: 4px 5px 8px rgb(0 0 0 / 54%);
-}
-.playlist__button-img {
-    left: 53%;
-    position: absolute;
-    top: 55%;
-    transform: translate(-50%,-50%);
-    max-width: 52px;
-  }
-.playlist__item-title {
-	padding: 15px 10px;
-	font-family: 'Montserrat Alternates';
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-	background-color: #161616;
-	color: #ffffff;
-	border-radius: 0 0 4px 4px;
-}
-.popup-youtube {
+.playlist .video-title {
+	font-size: 16px;
+	line-height: 28px;
 }
 
 /*---------------VACANCIES-----------------*/
@@ -1338,7 +1294,6 @@ border-radius: 4px;
 	font-size: 30px;
 	line-height: 36px;
 	text-align: center;
-	/* letter-spacing: -2px; */
 	color: #D70025;
 	margin-bottom: 30px;
 }
@@ -1352,7 +1307,6 @@ border-radius: 4px;
 	font-size: 24px;
 	line-height: 30px;
 	text-align: center;
-	/* letter-spacing: -1.5px; */
 	color: #161616;
 	margin-bottom: 15px;
 }
@@ -1375,7 +1329,6 @@ border-radius: 4px;
 	font-size: 20px;
 	line-height: 24px;
 	text-align: center;
-	letter-spacing: -1px;
 	display: flex; 
 	justify-content: center;
 	align-items: center;
@@ -1402,6 +1355,7 @@ border-radius: 4px;
 	display: block;
 	max-width: 100%;
 }
+
 /*-------DEPARTMENTS------*/
 .departments {
 	padding-bottom: 200px;
@@ -1409,8 +1363,9 @@ border-radius: 4px;
 	background-size: contain;
 	background-position: center bottom;
 	background-repeat: no-repeat;
+	margin-bottom: -2px;
 }
-.departaments__items .link__item:last-child {
+.departments__items .link__item:last-child {
 	grid-column-start: 2;
 }
 
@@ -1482,7 +1437,6 @@ picture {
 	line-height: 32px;
 	text-align: left;
 	color: #161616;
-	letter-spacing: 0;
 	padding-left: 25px;
 	position: relative;
 	margin-top: 12px;
@@ -1503,7 +1457,6 @@ picture {
 	font-size: 22px;
 	line-height: 30px;
 	text-align: center;
-	letter-spacing: -1.2px;
 	margin-bottom: 10px;
 }
 .department-branch__inner-title {
@@ -1511,7 +1464,6 @@ picture {
 	font-size: 20px;
 	line-height: 28px;
 	text-align: center;
-	letter-spacing: -1.5px;
 	color: #D70025;
 	list-style: none;
 }
@@ -1521,7 +1473,6 @@ picture {
 	line-height: 28px;
 	text-align: left;
 	color: #161616;
-	letter-spacing: 0;
 	padding-left: 25px;
 	position: relative;
 	margin-top: 12px;
@@ -1552,7 +1503,6 @@ picture {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 28px;
-	letter-spacing: -1.2px;
 	color: #D70025;
 	margin-bottom: 15px;
 }
@@ -1601,7 +1551,6 @@ picture {
 	height: 90px;
 	object-fit: contain;
 }
-
 
 /*------CONTACTS------*/
 .contacts .page__top {
@@ -1794,9 +1743,9 @@ picture {
 	.link__item-title {
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -0.8px;
 	}	
 }
+
 @media(max-width: 1090px) {
 	.banner__title {
     font-size: 60px;
@@ -1806,6 +1755,7 @@ picture {
 		min-height: 220px;
 	}
 }
+
 @media(max-width: 990px) {
 	.header__top {
 		padding-right: 80px;
@@ -1946,8 +1896,13 @@ picture {
 	.law-items__link {
     font-size: 18px;
     line-height: 22px;
-		letter-spacing: -1px;
   }
+	.branches__items {
+		gap: 15px;
+	}
+	.branches__items  .link__item-inner {
+		padding: 10px;
+	}
 	.note-info {
 		background-image: url('../images/note_img-small.png');
 		background-size: 32%;
@@ -1967,7 +1922,7 @@ picture {
 	}
 	.vacancies__item--big .vacancies__item-descr {
     grid-gap: 15px;
-}
+	}
 	.vacancies__item-title {
 		font-size: 20px;
 		line-height: 24px;
@@ -1976,10 +1931,9 @@ picture {
 	.vacancies__info {
     font-size: 16px;
     line-height: 22px;
-		letter-spacing: -0.5px;
 	}
-	.playlist__item-title {
-		font-size: 18px;
+	.playlist .video-title {
+    padding: 10px;
 	}
 }
 
@@ -2047,7 +2001,7 @@ picture {
 	.general__items .link__item:nth-child(3) {
     grid-column: span 2;
 	}
-	.departaments__items .link__item:last-child {
+	.departments__items .link__item:last-child {
 		grid-column-start: 1;
 	}
 	.administration__item-trade {
@@ -2058,7 +2012,6 @@ picture {
 	.administration__item-name {
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: -1px;
     margin-bottom: 10px;
 	}
 	.administration__item-phone,
@@ -2098,15 +2051,6 @@ picture {
 	}
 	.contacts__email {
 		display: inline-block;
-	}
-	.playlist__link {
-		padding-top: 45px;
-		gap: 25px;
-	}
-	.playlist__item-title {
-    padding: 10px 10px;
-    font-size: 16px;
-    line-height: 24px;
 	}
 }
 
@@ -2152,7 +2096,6 @@ picture {
     padding: 10px 15px 8px;
     font-size: 14px;
     line-height: 22px;
-    letter-spacing: -1px;
 	}
 	.table td {
     padding: 15px 10px 15px 0px;
@@ -2190,6 +2133,12 @@ picture {
 	.documentation-certificates-img {
     max-width: 100%;
 	}
+	.playlist__inner {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.playlist .video-title {
+		padding: 15px 20px;
+	}
 }
 
 @media(max-width: 720px) {
@@ -2209,21 +2158,14 @@ picture {
 	.save__item-img {
     height: 65px;
 	}
-	.videos__inner {
-    flex-direction: column;
-	}
-	.playlist__inner {
-		gap: 10px;
-	}
-	.playlist__item-title {
-    font-size: 14px;
-    line-height: 20px;
-	}
 	.law-items {
 		flex-wrap: wrap;
 	}
 	.law-items__link {
 		width: 48%;
+	}
+	.branches__items {
+		grid-template-columns: repeat(1, 1fr);
 	}
 	.note-text__paragraph:nth-child(1){
 		padding-right: 164px;
@@ -2268,7 +2210,6 @@ picture {
 		max-height: 250px;
 		object-fit: contain;
 	}
-	
 }
 
 @media(max-width: 680px) {
@@ -2323,7 +2264,6 @@ picture {
 	.why__content-credo {
     font-size: 16px;
 		line-height: 22px;
-		letter-spacing: -1.5px;
 	}
 	.why__content-info {
     margin-bottom: 20px;
@@ -2357,7 +2297,6 @@ picture {
 	.page-title {
     font-size: 28px;
     line-height: 32px;
-		letter-spacing: -0.7px;
 	}
 	.page__top {
 		margin-bottom: 20px;
@@ -2371,7 +2310,6 @@ picture {
 	.temporary-subtitle {
 		font-size: 20px;
 		line-height: 30px;
-		letter-spacing: -1px;
 	}
 	.temporary-subtitle {
 		margin-bottom: 20px;
@@ -2420,7 +2358,6 @@ picture {
 	.article__inner-title {
     font-size: 18px;
     line-height: 28px;
-		letter-spacing: -1px;
 		margin-bottom: 15px;
 	}
 	.vacancies__item + .vacancies__item {
@@ -2475,6 +2412,12 @@ picture {
 	.accordeon__body-question,
 	.accordeon__body-list:not(:last-child) {
     margin-bottom: 10px;
+	}
+	.general__items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.general__items .link__item:nth-child(3) {
+    grid-column: auto;
 	}
 }
 
@@ -2532,17 +2475,6 @@ picture {
 	}
 	.department-branch__inner-title {
 		font-size: 18px;
-		letter-spacing: -0.6px;
-	}
-	.playlist__inner {
-		grid-template-columns: repeat(1, 1fr);
-	}
-	.playlist__link {
-    padding-top: 90px;
-    gap: 79px;
-	}
-	.playlist__item-title {
-		width: 100%;
 	}
 }
 
@@ -2711,7 +2643,6 @@ picture {
 	.contacts__info-address,
 	.contacts__info-phone {
 		font-size: 16px;
-		/* line-height: 30px; */
 	}
 	.contacts__info-data:nth-child(1), 
 	.contacts__info-phone, 
@@ -2731,6 +2662,11 @@ picture {
 	.fax::before {
 		top: 0px;
 	}
+	.playlist .video-title {
+    padding: 10px;
+		font-size: 14px;
+		line-height: 24px;
+	}
 }
 
 @media(max-width: 440px)  {
@@ -2739,14 +2675,6 @@ picture {
 		height: 100%;
 		padding: 10px 0 15px 0;
 	}
-	/* .header__logo {
-		display: block;
-		height: 40px;
-		width: 100%;
-		margin: 0 auto 13px auto;
-		text-align: center;
-		padding: 0 58px;
-	} */
 	.header__logo {
 		display: block;
     height: 40px;
@@ -2896,8 +2824,6 @@ picture {
 	}
 	.general__items .link__item-inner {
     padding: 15px 10px;
-    flex-direction: column;
-		text-align: center;
 	}
 	.department-branch__schedule {
 		max-width: 200px;
@@ -2926,18 +2852,6 @@ picture {
 		align-items: center;
 		gap: 0px;
 	}
-	.playlist__link {
-    padding-top: 54px;
-    gap: 32px;
-	}
-	.playlist__button {
-		width: 50px;
-		height: 50px;
-	}
-	.playlist__button-img {
-		width: 41px;
-		height: 43px;
-	}
 }
 @media(max-width: 360px) {
 	.header__phones-inner {
@@ -2946,6 +2860,10 @@ picture {
 	.video-title {
 		font-size: 14px;
 		line-height: 18px;
+	}
+	.general__items .link__item-inner {
+    flex-direction: column;
+		text-align: center;
 	}
 	.rules__title,
 	.temporary-subtitle {

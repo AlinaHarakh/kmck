@@ -117,19 +117,14 @@
 
 			<section class="banner">
 				<div class="container">
-					<!-- <div class="banner__inner"> -->
 					<div class="banner__promo">
-						<!-- <source srcset="images/main_bg-small.png" type="image/png" media="(max-width:600px)">
-						<img class="banner__promo-img" src="images/main_bg-small.png" alt="banner">
-						</picture> -->
 						<img class="banner__promo-img" src="images/main_bg-small.png" alt="banner">
 						<p class="banner__promo-text">
 							Кров
 						</p>
 					</div>
-					<!-- <img class="banner__image" src="images/banner_image.png" alt="">
-					</div> -->
 			</section>
+
 			<section class="reserves">
 				<div class="container">
 					<h2 class="reserves__title section-title">Запаси крові</h2>
@@ -139,25 +134,25 @@
 							<div class="reserves__items">
 								<div class="reserves__item cont">
 									<div class="reserves__progress-chart circular-progress">
-										<span class="progress-value">3%</span>
+										<span class="progress-value" value="60">I</span>
+									</div>
+									<p class="reserves__progress-level text"></p>
+								</div>
+								<div class="reserves__item cont">
+									<div class="reserves__progress-chart circular-progress">
+										<span class="progress-value" value="60">II</span>
 									</div>
 									<p class="reserves__progress-level text">Достатній</p>
 								</div>
 								<div class="reserves__item cont">
 									<div class="reserves__progress-chart circular-progress">
-										<span class="progress-value">3% I</span>
+										<span class="progress-value" value="70">III</span>
 									</div>
 									<p class="reserves__progress-level text">Достатній</p>
 								</div>
 								<div class="reserves__item cont">
 									<div class="reserves__progress-chart circular-progress">
-										<span class="progress-value">3% I</span>
-									</div>
-									<p class="reserves__progress-level text">Достатній</p>
-								</div>
-								<div class="reserves__item cont">
-									<div class="reserves__progress-chart circular-progress">
-										<span class="progress-value">3% I</span>
+										<span class="progress-value" value="80">IV</span>
 									</div>
 									<p class="reserves__progress-level text">Достатній</p>
 								</div>
@@ -168,25 +163,25 @@
 							<div class="reserves__items">
 								<div class="reserves__item cont">
 									<div class="reserves__progress-chart circular-progress">
-										<span class="progress-value">3%</span>
+										<span class="progress-value" value="60">I</span>
+									</div>
+									<p class="reserves__progress-level text"></p>
+								</div>
+								<div class="reserves__item cont">
+									<div class="reserves__progress-chart circular-progress">
+										<span class="progress-value" value="60">II</span>
 									</div>
 									<p class="reserves__progress-level text">Достатній</p>
 								</div>
 								<div class="reserves__item cont">
 									<div class="reserves__progress-chart circular-progress">
-										<span class="progress-value">3% I</span>
+										<span class="progress-value" value="70">III</span>
 									</div>
 									<p class="reserves__progress-level text">Достатній</p>
 								</div>
 								<div class="reserves__item cont">
 									<div class="reserves__progress-chart circular-progress">
-										<span class="progress-value">3% I</span>
-									</div>
-									<p class="reserves__progress-level text">Достатній</p>
-								</div>
-								<div class="reserves__item cont">
-									<div class="reserves__progress-chart circular-progress">
-										<span class="progress-value">3% I</span>
+										<span class="progress-value" value="80">IV</span>
 									</div>
 									<p class="reserves__progress-level text">Достатній</p>
 								</div>
@@ -271,8 +266,6 @@
 							<source srcset="images/why-small.png" type="image/png" media="(max-width:570px)">
 							<img class="why__picture-img" src="images/why.png" alt="why">
 						</picture>
-						<!-- <img class="why__picture" src="images/why.png" alt="why"> -->
-
 						<div class="why__content">
 							<ul class="why__content-inner">
 								<li class="why__content-text">поранені воїни втрачають багато крові, що може стати причиною загибелі
@@ -285,7 +278,6 @@
 								</li>
 								<li class="why__content-text">відкладаються операції</li>
 							</ul>
-
 						</div>
 						<div class="why__content-descr">
 							<p class="why__content-info">
@@ -305,9 +297,6 @@
 							<div class="video" data-src="https://www.youtube.com/embed/dBNv0lvd4Ps?autoplay=1">
 								<div class="play-btn">
 									<div class="play-btn__icon"></div>
-									<!-- <h5 class="video-title preparation__video-title">
-										Як пiдготуватися до здачi крові?
-									</h5> -->
 								</div>
 							</div>
 						</div>
@@ -420,15 +409,18 @@
 								<p class="footer__contacts-text">Експедиція</p>
 								<a class="footer__contacts-number" href="tel:+380445120022">+38 044 512 00 22</a>
 							</div>
-
-
 						</div>
 					</div>
 				</div>
 				<p class="footer__copy">Copyright © 2023</p>
 			</div>
 		</footer>
+
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

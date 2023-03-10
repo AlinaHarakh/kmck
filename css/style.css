@@ -192,9 +192,10 @@ body._touch .menu__list > li._active .submenu {
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-color: #f9f9f9;
 }
 .banner__promo {
-	padding: 50px 0;
+	padding: 50px 0 0;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -233,7 +234,7 @@ body._touch .menu__list > li._active .submenu {
 }
 .reserves__kinds-title span {
 	color: #D70025;
-}
+} 
 .reserves__items {
 	display: flex;
 	justify-content: center;
@@ -245,37 +246,24 @@ body._touch .menu__list > li._active .submenu {
 	width: 31%;
 	text-align: center;
 }
-.cont {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	row-gap: 15px;
-}
-.circular-progress {
+.reserves__item-inner {
 	position: relative;
-	height: 105px;
-	width: 105px;
-	background: conic-gradient(#D70025 3.6deg, #ffffff 0deg);
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
-.circular-progress::before {
-	content: "";
-	position: absolute;
-	height: 80px;
-	width: 80px;
-	border-radius: 50%;
-	background-color: #F9F9F9;
+.progress-ring__circle {
+	transform-origin: center center;
+	transform: rotate(-90deg);
+	transition: stroke-dashoffset 0.3s;
 }
 .progress-value {
-	position: relative;
 	font-weight: 500;
 	font-size: 22px;
 	line-height: 24px;
-}
-.text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -80%);
+} 
+.reserves__progress-level {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
@@ -381,7 +369,6 @@ body._touch .menu__list > li._active .submenu {
 .video-clip {
 	background-color: #363636;
 	padding: 100px 0;
-	margin-bottom: 100px;
 	background-image: url('../images/video-clip__bg.png');
 	background-position: center;
 	background-size: cover;
@@ -554,7 +541,7 @@ body._touch .menu__list > li._active .submenu {
 
 /*------------BRANCHES---------------*/
 .branches {
-	margin-bottom: 100px;
+	padding: 100px 0;
 	background-color: #fbfbfb;
 }
 .branches__items {
@@ -1959,7 +1946,7 @@ picture {
     font-size: 22px;
     line-height: 28px;
 	}
-	.text {
+	.reserves__progress-level {
     font-size: 18px;
     line-height: 22px;
 	}
@@ -2149,7 +2136,7 @@ picture {
 	.reserves__items {
     gap: 25px 30px;
 	}
-	.cont {
+	.reserves__item {
     row-gap: 10px;
 	}	
 	.save__item {
@@ -2222,8 +2209,10 @@ picture {
 	.banner__promo {
 		height: auto;
 	}
+	.reserves__item {
+    /* width: 100%; */
+	}
 	/*---MARGIN/PADDING----*/
-	.video-clip,
 	.reserves,
 	.note-text,
 	.infections,
@@ -2233,7 +2222,6 @@ picture {
 	}
 	.save,
 	.why,
-	.branches,
 	.for-donors__items,
 	.video-inner,
 	.law-items,
@@ -2253,8 +2241,11 @@ picture {
 	.partners {
     margin-bottom: 70px;
 	}
-	.prohibition,
+	
+	.video-clip,
+	.branches,
 	.before,
+	.prohibition,
 	.videos {
 		padding: 70px 0;
 	}
@@ -2710,11 +2701,17 @@ picture {
     font-size: 24px;
     line-height: 30px;
 	}
+	.reserves__items {
+    gap: 18px 13px;
+    justify-content: space-between;
+	}
+	.reserves__item {
+		width: 45%;
+	}
 	.breadcrumbs__item::after {
 		display: none;
 	}
 	/*---MARGIN/PADDING----*/
-	.video-clip,
 	.reserves,
 	.note-text,
 	.infections,
@@ -2724,7 +2721,6 @@ picture {
 	}
 	.save,
 	.why,
-	.branches,
 	.for-donors__items,
 	.video-inner,
 	.law-items,
@@ -2745,6 +2741,7 @@ picture {
     margin-bottom: 50px;
 	}
 	.video-clip,
+	.branches,
 	.prohibition,
 	.before,
 	.videos {
@@ -2753,10 +2750,7 @@ picture {
 	.reserves__kinds-title,
 	.save__item-title {
     font-size: 20px;
-    line-height: 24px;
-	}
-	.reserves__item {
-    width: 40%;
+    line-height: 24px; 
 	}
 	.play-btn__icon {
     width: 50px;

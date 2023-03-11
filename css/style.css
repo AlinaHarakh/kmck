@@ -521,7 +521,7 @@ circle:nth-child(1) {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top center;
-	min-height: 200px;
+	min-height: 230px;
 	box-shadow: 2px 4px 20px rgba(112, 112, 112, 0.18);
 	border-radius: 4px;
 }
@@ -2178,6 +2178,9 @@ picture {
 	.branches__items {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.branches__items .link__item {
+    min-height: 280px;
+	}
 	.note-text__paragraph:nth-child(1){
 		padding-right: 164px;
 		position: relative;
@@ -2551,6 +2554,9 @@ picture {
 	.law-items__link {
 		width: 100%;
 	}
+	.for-donors__items  .link__item {
+    min-height: 280px;
+	}
 	.note-info {
 		background-size: 25%;
 	}
@@ -2872,6 +2878,10 @@ picture {
 	.header__phones-inner {
     gap: 20px;
 	}
+	.for-donors__items .link__item {
+    min-height: 192px;
+		background-size: contain;
+}
 	.reserves__items {
 		flex-direction: column;
 	}

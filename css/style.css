@@ -310,7 +310,7 @@ circle:nth-child(1) {
 .save__column {
 	width: 50%;
 }
-.save__column.--right {
+.save__column.save__column--right {
 	margin-top: 120px;
 }
 .save__item {
@@ -668,7 +668,6 @@ body._touch .viber-pc {
 	background-image: url('../images/mail.svg');
 	top: 2px;
 }
-.footer__contacts-phones {}
 .footer__contacts-phone {
 	display: flex;
 	align-items: center;
@@ -2293,7 +2292,7 @@ picture {
     margin-bottom: 20px;
 		line-height: 28px;	
 	}
-	.save__column.--right {
+	.save__column.save__column--right {
     margin-top: 0px;
 	}
 	.footer__links {

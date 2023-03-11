@@ -1210,9 +1210,12 @@ td p:not(:last-child) {
 .accordeon__body-text:not(:last-child) {
 	margin-bottom: 15px;
 }
+.accordeon__body-title {
+	font-weight: 500;
+	margin-bottom: 5px;
+}
 .accordeon__body-list {
 	list-style: none;
-	font-weight: 500;
 }
 .accordeon__body-list:not(:last-child) {
 	margin-bottom: 15px;

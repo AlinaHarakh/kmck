@@ -213,9 +213,8 @@ body._touch .menu__list > li._active .submenu {
 	text-transform: uppercase;
 	color: #D70025;
 }
-.banner__image {
-	max-width: 71vh;
-}
+
+/*---------RESERVES---------*/
 .reserves {
 	padding: 100px 0;
 	background-color: #F9F9F9;
@@ -243,28 +242,56 @@ body._touch .menu__list > li._active .submenu {
 	gap: 40px 30px;
 }
 .reserves__item {
-	width: 31%;
+	width: 45%;
 	text-align: center;
 }
-.reserves__item-inner {
-	position: relative;
+.circle__box {
+  color: #161616;
+  text-align: center;
 }
-.progress-ring__circle {
-	transform-origin: center center;
-	transform: rotate(-90deg);
-	transition: stroke-dashoffset 0.3s;
+.reserves__item-skill {
+  position: relative;
 }
-.progress-value {
-	font-weight: 500;
+svg {
+  transform: rotate(309deg);
+  overflow: initial;
+  transform-origin: center;
+}
+circle {
+  stroke-width: 15px;
+  fill: none;
+  transition: all 0.5s ease;
+}
+circle:nth-child(1) {
+  stroke: #ffffff;
+}
+.progress {
+  stroke: var(--stroke);
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+  stroke-dasharray: var(--stroke-dasharray);
+  stroke-dashoffset: var(--stroke-dasharray);
+  animation: progress var(--animation-time) ease-in forwards;
+  --webkit-stroke-position: inside;
+  stroke-linecap: round;
+}
+@keyframes progress {
+  to {
+    stroke-dashoffset: var(--stroke-dashoffset);
+  }
+}
+.box strong {
+  font-weight: 500;
 	font-size: 22px;
 	line-height: 24px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -80%);
-} 
-.reserves__progress-level {
-	font-weight: 600;
+}
+.reserves__item-text {
+  font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
 }
@@ -1545,11 +1572,11 @@ picture {
 	z-index: 4;
 }
 .contacts {
-	position: relative;
+	/* position: relative; */
 	background-color: #161616;
 	color: #FFFFFF;
 }
-.contacts::after {
+/* .contacts::after {
 	content: '';
 	position: absolute;
 	z-index: 4;
@@ -1561,7 +1588,7 @@ picture {
 	background-size: cover;
 	background-position: top  center;
 	background-repeat: no-repeat;
-}
+} */
 .contacts__title {
 	z-index: 20;
 }
@@ -1946,7 +1973,7 @@ picture {
     font-size: 22px;
     line-height: 28px;
 	}
-	.reserves__progress-level {
+	.reserves__item-text {
     font-size: 18px;
     line-height: 22px;
 	}
@@ -2042,9 +2069,6 @@ picture {
 }
 
 @media(max-width: 820px) {
-	.banner__image {
-		max-width: 50%;
-	}
 	.video-container {
 		height: auto;
 	}
@@ -2208,9 +2232,6 @@ picture {
 	}
 	.banner__promo {
 		height: auto;
-	}
-	.reserves__item {
-    /* width: 100%; */
 	}
 	/*---MARGIN/PADDING----*/
 	.reserves,
@@ -2627,9 +2648,9 @@ picture {
 	.before__columns {
 		flex-direction: column;
 	}
-	.contacts::after {
+	/* .contacts::after {
 		display: none;
-	}
+	} */
 	.contacts__info-data,
 	.contacts__info-address,
 	.contacts__info-phone {
@@ -2702,11 +2723,11 @@ picture {
     line-height: 30px;
 	}
 	.reserves__items {
-    gap: 18px 13px;
+    gap: 18px 5px;
     justify-content: space-between;
 	}
 	.reserves__item {
-		width: 45%;
+		width: 49%;
 	}
 	.breadcrumbs__item::after {
 		display: none;
@@ -2850,6 +2871,12 @@ picture {
 @media(max-width: 360px) {
 	.header__phones-inner {
     gap: 20px;
+	}
+	.reserves__items {
+		flex-direction: column;
+	}
+	.reserves__item {
+		width: 100%;
 	}
 	.video-title {
 		font-size: 14px;

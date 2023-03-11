@@ -50,158 +50,40 @@ if (iconMenu) {
 }
 
 // Progress
+let progress = document.querySelectorAll('.progress');
+let progress_text = document.querySelectorAll('.reserves__item-text ');
+progress.forEach((pro) => {
+	let percentage = pro.getAttribute('data-value');
+	let color = pro.getAttribute('data-stroke');
+	let radius = pro.r.baseVal.value;
+	let circumference = radius * 2 * Math.PI;
+	let stroke = circumference - (circumference * percentage) / 100;
+	pro.style.setProperty('--stroke-dashoffset', stroke);
+	pro.style.setProperty('--stroke-dasharray', circumference);
+	pro.style.setProperty('--stroke', color);
+	pro.style.setProperty('--animation-time', `${percentage * 100}ms`);
+});
+progress_text.forEach((text) => {
+	let data = text.getAttribute('data-value');
+	let progress_value = 0;
+	let progress_bar = setInterval(() => {
+		progress_value++;
+		if (data >= 66) {
+			text.innerHTML = "Достатній";
+		} else if (data <= 65 && data >= 33) {
+			text.innerHTML = "Середній";
+		}
+		else {
+			text.innerHTML = "Низький";
+		}
+		if (progress_value == data) {
+			clearInterval(progress_bar);
+		}
+	}, 100);
+});
 
-
-circles = document.querySelectorAll('.progress-ring__circle');
-levels = document.querySelectorAll('.reserves__progress-level');
-
-
-circles.forEach(circle => {
-	const radius = circle.r.baseVal.value;
-	const circumference = 2 * Math.PI * radius;
-	circle.style.strokeDasharray = `${circumference} ${circumference}`;
-	circle.style.strokeDashoffset = circumference;
-	setProgress(circumference, circle);
-	// alert(level.innerHTML);
-	// writeLevel(offset);
-})
-
-
-
-
-
-
-levels.forEach(level => {
-	const rise = level.getAttribute('data-progress');
-	if (rise >= 66) {
-		level.innerHTML = "Достатній";
-	} else if (rise <= 65 && rise >= 33) {
-		level.innerHTML = "Середній";
-	}
-	else {
-		level.innerHTML = "Низький";
-	}
-})
-
-function setProgress(circumference, circle) {
-	const offset = circumference - circle.getAttribute('data-progress') / 100 * circumference;
-	circle.style.strokeDashoffset = offset;
-
-}
-
-
-
-
-// createCommonAttribute();
-// function createCommonAttribute() {
-// 	var circleAttribute = document.querySelector('.progress-ring__circle').getAttribute('data-progress');
-// 	var textNoAttribute = document.querySelector('.reserves__progress-level');
-
-// 	var textPrint = textNoAttribute.innerHTML = circleAttribute;
-// alert(textPrint);
-// var greenY;
-
-// for (let i = 0; i < numberGreen; i++) {
-
-// 	greenY = Math.ceil(Math.random() * greenDots.clientHeight);
-// 	greenX = Math.ceil(Math.random() * greenDots.clientWidth);
-
-// 	var greenDot = document.createElement('div');
-// 	greenDots.appendChild(greenDot);
-// 	greenDot.className = 'dot-green';
-
-// 	greenDot.style.bottom = greenY + "px";
-// 	greenDot.style.left = greenX + "px";
-
-// 	addPrompt(greenDot);
-
-// }
-// }
-// const circle = document.querySelector('.progress-ring__circle');
-// const radius = circle.r.baseVal.value;
-// const circumference = 2 * Math.PI * radius;
-
-// const input = document.querySelector('.progress');
-// function determineEndValue(input) {
-// 	setProgress(input.value);
-// }
-
-// circle.style.strokeDasharray = `${circumference} ${circumference}`;
-// circle.style.strokeDashoffset = circumference;
-
-
-
-// function setProgress(percent) {
-// 	const offset = circumference - percent / 100 * circumference;
-// 	circle.style.strokeDashoffset = offset;
-// }
-// setProgress(determineEndValue(input));
-
-// alert();
-
-
-// var speed = 30;
-// var progressStartValue = 0;
-// let circularProgress = document.querySelector('.circular-progress');
-// let progressValue = document.querySelector('.progress-value');
-// let progressEndValue = 0;
-// let progressNumber = 0;
-// determineEndValue();
-
-
-
-
-// function determineEndValue() {
-// 	progressEndValue = document.querySelector('.progress-value').getAttribute("value");
-// 	progressNumber = Number(progressEndValue);
-// 	setInterval(progressNumber);
-// 	writeLevel();
-// }
-
-function writeLevel() {
-
-	if (offset >= 66) {
-		level.innerHTML = "Достатній";
-	} else if (offset <= 65 && offset >= 33) {
-		level.innerHTML = "Середній";
-	}
-	else {
-		level.innerHTML = "Низький";
-		// alert(progressNumber);
-	}
-}
-// let progress = setInterval(() => {
-// 	progressStartValue++;
-// 	progressValue.textContent = progressStartValue;
-// 	circularProgress.style.background = 'conic-gradient(#D70025 ' + (progressStartValue * 3.6) + 'deg, #ffffff 0deg)';
-
-// 	if (progressStartValue == progressEndValue) {
-// 		clearInterval(progress);
-// 	}
-
-// }, speed);
-// findProgresses();
-// function findProgresses() {
-// let progresses = document.querySelectorAll('.progress-value')
-// progresses.forEach(function (findProgresses) {
-// 	for (let i = 0; i < progresses.length; i++) {
-// 		// alert(progressesNumber);
-// 		determineEndValue();
-// 		// alert(progressNumber)
-// 		writeLevel();
-// 	}
-// 	alert(progress.isArray)
-// });
-
-
-
-
-
-
-
-
+/*-----ANIMATION------*/
 const animItems = document.querySelectorAll('._anim-items');
-
 if (animItems.length > 0) {
 	window.addEventListener('scroll', animOnScroll);
 	function animOnScroll() {
@@ -210,7 +92,6 @@ if (animItems.length > 0) {
 			const animItemHeight = animItem.offsetHeight;
 			const animItemOffset = offset(animItem).top;
 			const animStart = 4;
-
 
 			let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
@@ -235,7 +116,6 @@ if (animItems.length > 0) {
 	setTimeout(() => {
 		animOnScroll();
 	}, 500);
-
 }
 
 /*------VIDEO----*/
@@ -264,8 +144,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
 });
 
+/*-------ACCORDEON--------*/
 +function () {
-	// document.querySelector('.accordeon__section')
 
 	var accordeonHeaderClickHandler = function (e) {
 
@@ -287,9 +167,6 @@ window.addEventListener('DOMContentLoaded', function () {
 		section.addEventListener('click', accordeonHeaderClickHandler)
 	})
 }()
-
-
-// + function name() {
 
 
 $('.documentation-certificate__item').magnificPopup({
@@ -335,10 +212,3 @@ $(document).ready(function () {
 
 	});
 });
-	// }
-// $.magnificPopup.open({
-// 	items: {
-// 		src: 'https://www.youtube.com/watch?v=0O2aH4XLbto'
-// 	},
-// 	type: 'iframe'
-// });

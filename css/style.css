@@ -281,7 +281,7 @@ circle:nth-child(1) {
     stroke-dashoffset: var(--stroke-dashoffset);
   }
 }
-.box p {
+.box span {
   font-weight: 500;
 	font-size: 22px;
 	line-height: 24px;

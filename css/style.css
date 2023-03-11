@@ -732,8 +732,8 @@ body._touch .viber-pc {
 }
 .page-title {
 	font-weight: 600;
-	font-size: 50px;
-	line-height: 60px;
+	font-size: 40px;
+	line-height: 50px;
 	text-align: center;
 	color: #161616;
 }
@@ -1469,7 +1469,7 @@ picture {
 	border-radius: 10px;
 	background-color: #D70025;
 }
-.department-branch__title {
+.department-branch__text-title {
 	font-weight: 600;
 	font-size: 22px;
 	line-height: 30px;
@@ -1482,6 +1482,8 @@ picture {
 	line-height: 28px;
 	text-align: center;
 	color: #D70025;
+}
+.department-branch__inner-list {
 	list-style: none;
 }
 .department-branch__inner-item {
@@ -1715,8 +1717,8 @@ picture {
 		line-height: 18px;
 	}
 	.page-title {
-    font-size: 34px;
-    line-height: 46px;
+    font-size: 28px;
+    line-height: 36px;
 	}
 	.page__top {
 		margin-bottom: 35px;
@@ -2020,6 +2022,10 @@ picture {
 	}
 	.departments__items .link__item:last-child {
 		grid-column-start: 1;
+	}
+	.department-branch__text-title {
+		font-size: 18px;
+		line-height: 22px;
 	}
 	.administration__item-trade {
     font-size: 16px;

@@ -117,7 +117,7 @@ body._lock {
 	border-top: 5px solid #D70025;
 }
 .menu__item--active {
-	border-bottom: 4px solid #D70025;
+	border-bottom: 5px solid #D70025;
 	color: #D70025;
 }
 .submenu {
@@ -133,6 +133,9 @@ body._lock {
 	transition: all 0.5s;
 	color: #ffffff;
 	font-size: 14px;
+}
+.menu__item--active-submenu {
+	color: #D70025;
 }
 .submenu__item:hover {
 	color: #6E7176;
@@ -192,7 +195,8 @@ body._touch .menu__list > li._active .submenu {
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #f9f9f9;
+	background-color: #e3e3e3;
+	margin-bottom: 100px;
 }
 .banner__promo {
 	padding: 50px 0 0;
@@ -216,8 +220,7 @@ body._touch .menu__list > li._active .submenu {
 
 /*---------RESERVES---------*/
 .reserves {
-	padding: 100px 0;
-	background-color: #F9F9F9;
+	background-color: #e5e3e3;
 	margin-bottom: 100px;
 }
 .reserves__kinds {
@@ -258,7 +261,7 @@ svg {
   transform-origin: center;
 }
 circle {
-  stroke-width: 15px;
+  stroke-width: 9px;
   fill: none;
   transition: all 0.5s ease;
 }
@@ -316,7 +319,8 @@ circle:nth-child(1) {
 .save__item {
 	text-align: center;
 	margin-bottom: 30px;
-	box-shadow: 2px 4px 32px rgba(112, 112, 112, 0.15);
+	/* box-shadow: 2px 4px 32px rgb(112 112 112 / 54%); */
+	border: 1px solid #a8a4a4;
 	border-radius: 4px;
 	padding: 30px 25px;
 	transform: translateY(50px);
@@ -343,9 +347,6 @@ circle:nth-child(1) {
 } 
 
 /*------------WHY----------------*/
-.why {
-	margin-bottom: 100px;
-}
 .why__inner {
 	display: grid;
 	grid-template-columns: minmax(150px, 300px) 1fr;
@@ -741,7 +742,7 @@ body._touch .viber-pc {
 }
 
 /*-------VIDEOS-----*/
-.videos {
+/* .videos {
 	background-color: #363636;
 	padding: 100px 0;
 	background-image: url('../images/video-clip__bg.png');
@@ -763,7 +764,7 @@ body._touch .viber-pc {
 }
 .videos .video-container:nth-child(5) .play-btn {
 	background-image: url('../images/previews/for-donors_prev5.jpg');
-}
+} */
 
 /*----LAW_ABOUT_DONORS------*/
 .law-items {
@@ -786,7 +787,7 @@ body._touch .viber-pc {
 /*------NOTE---------*/
 .note-info {
 	background-image: url('../images/note_img.png');
-	background-size: 58%;
+	background-size: 49%;
 	background-position: right top;
 	background-repeat: no-repeat;
 	margin-bottom: 100px;
@@ -822,8 +823,8 @@ body._touch .viber-pc {
 	font-size: 18px;
 	line-height: 38px;
 	padding: 20px 25px;
-	box-shadow: 2px 4px 31px rgb(112 112 112 / 10%);
-  border-radius: 4px;
+	border: 1px solid #b7b7b7;
+  border-radius: 6px;
 	flex: 48%;
 	width: 100%;
 }
@@ -836,20 +837,19 @@ flex: 100%;
 }
 .note-text {
 	background-color: #fbfbfb;
-	padding: 100px 0;
 	margin-bottom: 100px;
 }
 .note-text__paragraph {
 	font-size: 18px;
 	line-height: 38px;
-	max-width: 900px;
+	max-width: 780px;
 }
 .note-text__paragraph + .note-text__paragraph  {
 	margin-top: 20px;
 }
 .note-text__paragraph:nth-child(2){
 	position: relative;
-	padding-right: 415px;
+	padding-right: 430px;
 	max-width: 100%;
 }
 .note-text__paragraph:nth-child(2)::after{
@@ -874,24 +874,24 @@ flex: 100%;
 	font-size: 18px;
 	line-height: 26px;
 	text-align: center;
-	color: #6E7176;
-	background-color: #f5f5f5;
+	color: #ffffff;
+	background-color: #a8a4a4;
 }
 .table th:first-child {
 	border-radius: 6px 0 0 6px;
-	border-right: 1px solid #ffffff;
+	border-right: 1px solid #a8a4a4;
 }
 .table th:last-child {
 	border-radius: 0px 6px 6px 0;
 }
 tr {
-	border-bottom: 1px solid #f5f5f5;
+	border-bottom: 1px solid #a8a4a4;
 }
 tr:first-child {
 	border: none;
 }
 td {
-	border-right: 1px solid #f5f5f5;
+	border-right: 1px solid #a8a4a4;
 	padding: 25px 10px 25px 0px;
 }
 td:nth-child(1) {
@@ -906,9 +906,14 @@ td:not(:first-child) {
 }
 td:last-child {
 	border: none;
+	/* border-left: 1px solid #a8a4a4; */
 }
 td p:not(:last-child) {
 	margin-bottom: 12px;
+}
+.criteria__table>tr>td:last-child {
+	border: none;
+	border-left: 1px solid #a8a4a4;
 }
 .infections__table td:nth-child(1),
 .vaccination__table td:nth-child(1),
@@ -925,11 +930,14 @@ td p:not(:last-child) {
 .inner-table tr {
 	border: none;
 }
+.epidemic__table>tbody>tr>td {
+	border-top: 1px solid #a8a4a4;
+	border-bottom: 1px solid #a8a4a4;
+}
 
 /*------TEMPORARY--------*/
 .infections {
 	background-color: #fbfbfb;
-	padding: 100px 0;
 	margin-bottom: 100px;
 }
 .temporary-subtitle {
@@ -953,12 +961,19 @@ td p:not(:last-child) {
 }
 .risk__table td:nth-child(1) {
 	min-width: 670px;
+	border: none;
 }
-.risk__table tr:not(:last-child) {
+/* .risk__table tr:last-child {
 	border-bottom: none;
-}
+} */
 .risk__table tr:last-child {
-	border-top: 1px solid #f5f5f5;
+	border-bottom: 1px solid #a8a4a4;
+}
+.risk__table td {
+	border-left: none;
+}
+.risk__table td:last-child {
+	border-left: 1px solid #a8a4a4;
 }
 .vaccination {
 	background-color: #6E7176;
@@ -1029,7 +1044,7 @@ td p:not(:last-child) {
 	gap: 5px;
 	width: 115px;
 	height: 115px;
-	box-shadow: 2px 5px 27px rgb(0 0 0 / 6%);
+	border:  1px solid #a8a4a4;
 	border-radius: 6px;
 	background-color: #ffffff;
 }
@@ -1048,7 +1063,7 @@ td p:not(:last-child) {
 }
 .timing__period-info {
 	padding: 20px;
-	box-shadow: 2px 5px 27px rgb(0 0 0 / 6%);
+	border:  1px solid #a8a4a4;
 	border-radius: 6px;
 	background-color: #ffffff;
 }
@@ -1188,7 +1203,7 @@ td p:not(:last-child) {
 	font-size: 16px;
 	line-height: 30px;
 	background: #FFFFFF;
-	box-shadow: 2px 4px 17px rgba(173, 170, 170, 0.25);
+	border: 1px solid #a8a4a4;
 	border-radius: 4px;
 	color: #161616;
 	padding: 15px 25px 13px;
@@ -1299,8 +1314,8 @@ td p:not(:last-child) {
 }
 .vacancies__item {
 	padding: 40px 20px;
-	box-shadow: 2px 4px 38px rgb(112 112 112 / 7%);
-border-radius: 4px;
+	border: 1px solid #a8a4a4;
+	border-radius: 4px;
 }
 .vacancies__item + .vacancies__item {
 	margin-top: 50px;
@@ -1748,6 +1763,9 @@ picture {
 	.note-text__paragraph:nth-child(2) {
     padding-right: 320px;
 	}
+	.note-text__paragraph:nth-child(3) {
+    max-width: 700px;
+	}
 	.note-text__paragraph:nth-child(2)::after {
     top: -60px;
     width: 315px;
@@ -1987,7 +2005,7 @@ picture {
 	.save__item {
 		margin-bottom: 20px;
 		padding: 25px 20px;
-		box-shadow: 2px 4px 32px rgb(112 112 112 / 7%);
+		/* box-shadow: 2px 4px 32px rgb(32 32 32 / 51%); */
 	}
 	.why__inner {
 		grid-gap: 20px;
@@ -2115,6 +2133,7 @@ picture {
     padding: 10px 15px 8px;
     font-size: 14px;
     line-height: 22px;
+		/* border-bottom: 1px solid #a8a4a4; */
 	}
 	.table td {
     padding: 15px 10px 15px 0px;
@@ -2123,6 +2142,7 @@ picture {
     font-size: 14px;
     line-height: 28px;
 		padding-left: 15px;
+		/* border-left: 1px solid #a8a4a4; */
 	}
 	td:nth-child(1) {
 		font-size: 14px;
@@ -2190,7 +2210,7 @@ picture {
     min-height: 280px;
 	}
 	.note-text__paragraph:nth-child(1){
-		padding-right: 164px;
+		padding-right: 196px;
 		position: relative;
 	}
 	.note-text__paragraph:nth-child(1)::after {
@@ -2245,25 +2265,25 @@ picture {
 		height: auto;
 	}
 	/*---MARGIN/PADDING----*/
-	.reserves,
-	.note-text,
-	.infections,
 	.vaccination {
     padding: 70px 0;
     margin-bottom: 70px;
 	}
+	.banner,
+	.reserves,
 	.save,
-	.why,
 	.for-donors__items,
 	.video-inner,
 	.law-items,
 	.note-info,
 	.rules,
 	.criteria,
+	.infections,
 	.risk,
 	.contraindications,
 	.epidemic,
 	.timing,
+	.interestingness,
 	.article,
 	.general,
 	.vacancies,
@@ -2277,9 +2297,11 @@ picture {
 	.video-clip,
 	.branches,
 	.before,
-	.prohibition,
-	.videos {
+	.prohibition {
 		padding: 70px 0;
+	}
+	.note-text {
+		margin-bottom: 70px;
 	}
 	.why__content-text {
 		margin-bottom: 10px;
@@ -2458,12 +2480,15 @@ picture {
 	.save__item {
 		padding: 30px 20px;
 	}
+	.note-text {
+		padding: 0;
+	}
 	.note-info {
 		background-image: url('../images/note_img-smallest.png');
 	}
 	.note-text__paragraph:nth-child(1) {
     padding-right: 0px;
-		padding-top: 190px;
+		padding-top: 210px;
 	}
 	.note-text__paragraph:nth-child(1)::after {
 		top: 0;
@@ -2512,24 +2537,6 @@ picture {
     font-size: 26px;
     line-height: 30px;
     margin-bottom: 35px;
-	}
-	.breadcrumbs__item:nth-child(1) {
-		background-image: url('../images/home.svg');
-		background-position: center;
-		background-size: contain;
-		background-repeat: no-repeat;
-		height: 24px;
-    width: 14px;
-    margin-right: 9px;
-	}
-	.breadcrumbs__item:nth-child(1)	.breadcrumbs__link {
-		line-height: 20px;
-		opacity: 0;
-		display: inline-block;
-	}
-	.breadcrumbs__item:nth-child(1).breadcrumbs__item::after {
-    right: -4px;
-    top: 3px;
 	}
 	.why__inner {
 		grid-template-columns: 1fr;
@@ -2743,30 +2750,28 @@ picture {
 	.reserves__item {
 		width: 49%;
 	}
-	.breadcrumbs__item::after {
-		display: none;
-	}
 	/*---MARGIN/PADDING----*/
-	.reserves,
-	.note-text,
-	.infections,
 	.vaccination {
-    padding: 50px 0;
+    padding: 0;
     margin-bottom: 50px;
 	}
+	.banner,
+	.reserves,
 	.save,
-	.why,
 	.for-donors__items,
 	.video-inner,
 	.law-items,
 	.note-info,
+	.note-text,
 	.rules,
 	.criteria,
+	.infections,
 	.risk,
 	.contraindications,
 	.epidemic,
 	.timing,
 	.article,
+	.interestingness
 	.general,
 	.vacancies,
 	.documentation-certificate__items,
@@ -2778,8 +2783,7 @@ picture {
 	.video-clip,
 	.branches,
 	.prohibition,
-	.before,
-	.videos {
+	.before {
 		padding: 50px 0;
 	}
 	.reserves__kinds-title,

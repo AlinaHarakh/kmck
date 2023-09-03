@@ -1,4 +1,4 @@
-# kmck<h1>Київський центр крові</h1>
+# BloodCentre<h1>Wентр крові</h1>
 <br>
 <p>WEBSITE FOR THE BLOOD DONATION CENTRE</p>
 <a href="https://alinaharakh.github.io/kmck/"><strong>WEBSITE LINK</strong></a>
@@ -20,11 +20,6 @@
       <strong>JS</strong>
     </em>
   </li>
-  <li>
-    <em>
-      <strong>SLICK</strong>
-    </em>
-  </li>
     <li>
     <em>
       <strong>Figma</strong>
@@ -32,4 +27,4 @@
   </li>
 </ul>
 <br>
-<!-- <img src="https://github.com/AlinaHarakh/public-images/raw/main/storm.jpg"> -->
+

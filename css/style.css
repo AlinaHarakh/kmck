@@ -222,6 +222,7 @@ body._touch .menu__list > li._active .submenu {
 .reserves {
 	background-color: #e5e3e3;
 	margin-bottom: 100px;
+	padding-bottom: 100px;
 }
 .reserves__kinds {
 	display: flex;

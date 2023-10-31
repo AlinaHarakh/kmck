@@ -196,7 +196,7 @@ body._touch .menu__list > li._active .submenu {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #e3e3e3;
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 }
 .banner__promo {
 	padding: 50px 0 0;

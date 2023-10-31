@@ -2269,7 +2269,6 @@ picture {
     padding: 70px 0;
     margin-bottom: 70px;
 	}
-	.banner,
 	.reserves,
 	.save,
 	.for-donors__items,
@@ -2293,7 +2292,7 @@ picture {
 	.partners {
     margin-bottom: 70px;
 	}
-	
+	.banner,
 	.video-clip,
 	.branches,
 	.before,

@@ -2755,7 +2755,6 @@ picture {
     padding: 0;
     margin-bottom: 50px;
 	}
-	.banner,
 	.reserves,
 	.save,
 	.for-donors__items,
@@ -2780,6 +2779,7 @@ picture {
 	.partners {
     margin-bottom: 50px;
 	}
+	.banner,
 	.video-clip,
 	.branches,
 	.prohibition,

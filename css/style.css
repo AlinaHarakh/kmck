@@ -195,8 +195,7 @@ body._touch .menu__list > li._active .submenu {
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #e3e3e3;
-	padding-bottom: 100px;
+	background-color: #f5f5f5;
 }
 .banner__promo {
 	padding: 50px 0 0;
@@ -220,9 +219,9 @@ body._touch .menu__list > li._active .submenu {
 
 /*---------RESERVES---------*/
 .reserves {
-	background-color: #e5e3e3;
+	background-color: #f5f5f5;
+	padding: 100px 0;
 	margin-bottom: 100px;
-	padding-bottom: 100px;
 }
 .reserves__kinds {
 	display: flex;
@@ -320,7 +319,6 @@ circle:nth-child(1) {
 .save__item {
 	text-align: center;
 	margin-bottom: 30px;
-	/* box-shadow: 2px 4px 32px rgb(112 112 112 / 54%); */
 	border: 1px solid #a8a4a4;
 	border-radius: 4px;
 	padding: 30px 25px;
@@ -352,6 +350,7 @@ circle:nth-child(1) {
 	display: grid;
 	grid-template-columns: minmax(150px, 300px) 1fr;
 	grid-gap: 30px;
+	margin-bottom: 100px;
 }
 .why__picture {
 	grid-row: span 2;
@@ -837,8 +836,9 @@ flex: 100%;
 	max-height: 80px;
 }
 .note-text {
-	background-color: #fbfbfb;
+	background-color: #f5f5f5;
 	margin-bottom: 100px;
+	padding: 100px 0;
 }
 .note-text__paragraph {
 	font-size: 18px;
@@ -939,6 +939,7 @@ td p:not(:last-child) {
 /*------TEMPORARY--------*/
 .infections {
 	background-color: #fbfbfb;
+	padding: 100px 0;
 	margin-bottom: 100px;
 }
 .temporary-subtitle {
@@ -2266,12 +2267,15 @@ picture {
 		height: auto;
 	}
 	/*---MARGIN/PADDING----*/
-	.vaccination {
+	.reserves,
+	.vaccination,
+	.note-text,
+	.infections {
     padding: 70px 0;
     margin-bottom: 70px;
 	}
-	.reserves,
 	.save,
+	.why__inner,
 	.for-donors__items,
 	.video-inner,
 	.law-items,
@@ -2293,7 +2297,7 @@ picture {
 	.partners {
     margin-bottom: 70px;
 	}
-	.banner,
+	
 	.video-clip,
 	.branches,
 	.before,
@@ -2479,9 +2483,6 @@ picture {
 	}
 	.save__item {
 		padding: 30px 20px;
-	}
-	.note-text {
-		padding: 0;
 	}
 	.note-info {
 		background-image: url('../images/note_img-smallest.png');
@@ -2751,17 +2752,17 @@ picture {
 		width: 49%;
 	}
 	/*---MARGIN/PADDING----*/
-	.vaccination {
-    padding: 0;
+	.vaccination,
+	.infections {
+    padding: 50px 0;
     margin-bottom: 50px;
 	}
-	.reserves,
 	.save,
+	.why__inner,
 	.for-donors__items,
 	.video-inner,
 	.law-items,
 	.note-info,
-	.note-text,
 	.rules,
 	.criteria,
 	.infections,
@@ -2779,12 +2780,16 @@ picture {
 	.partners {
     margin-bottom: 50px;
 	}
-	.banner,
 	.video-clip,
 	.branches,
 	.prohibition,
 	.before {
 		padding: 50px 0;
+	}
+	.reserves,
+	.note-text {
+		padding: 50px 0;
+		margin-bottom: 50px;
 	}
 	.reserves__kinds-title,
 	.save__item-title {
